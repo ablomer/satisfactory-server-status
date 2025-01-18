@@ -7,10 +7,10 @@ import { Socket as SocketIOSocket, Server as SocketIOServer } from "socket.io"
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0"
 
 const satisfactoryConfig = {
-    host: "your-server-ip",
-    port: 7777,
-    password: "your-password",
-    api_path: "/api/v1/"
+    host: process.env.SF_SERVER_HOST || "localhost",
+    port: Number(process.env.SF_SERVER_PORT) || 7777,
+    password: process.env.SF_SERVER_PASSWORD || "your-password",
+    api_path: process.env.SF_API_PATH || "/api/v1/"
 }
 
 const POLL_INTERVAL = 2000

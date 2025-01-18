@@ -1,7 +1,7 @@
 {
   "name": "satisfactory-server-status",
   "version": "0.0.1",
-  "description": "This Node.js program acts as a bridge between your Satisfactory dedicated server and a web-based dashboard (or any other client) to display real-time server status information",
+  "description": "A real-time server status monitor for Satisfactory dedicated servers that leverages UDP polling and WebSocket connections for efficient state tracking.",
   "author": "Augusto Blomer",
   "license": "MIT",
   "scripts": {
